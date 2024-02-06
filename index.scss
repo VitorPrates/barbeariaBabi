@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+html
+{
+    width: 100vw;
+    height: 100vh;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+.main_header
+{
+    width: 100%;
+    height: 80px;
+    // background-color: black;
+    background-image: linear-gradient(0deg, #321616f1 , black, black );
+    .container_header
+    {
+        width: 90%;
+        max-width: 1170px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        // background-color: rgba(168, 121, 121, 0.374);
+    }
+    .logo_header
+    {
+        cursor: pointer;
+        img
+        {
+            transform: rotateZ(270deg);
+            width: 100px;
+        }
+    }
+    .infos_contato
+    {
+        margin: 0px 0px 0px auto;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .local
+        {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            svg
+            {
+                margin: 0px 5px 0px 0px;
+            }
+        }
+        .numero
+        {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            svg
+            {
+                margin: 0px 5px 0px 0px;
+            }
+        }
+        .options
+        {
+            transition: 0.2s;
+        }
+        .options:active
+        {
+            transform: translateY(10px);
+        }
+    }
+}
+
+.init_section
+{
+    width: 100%;
+    height: 500px;
+    // background-color: rgb(35,17,15);
+    background-image: linear-gradient(0deg, gray,  #321616f1 30%);
+    display: flex;
+    align-items: center;
+    .init_section_container
+    {
+        width: 90%;
+        max-width: 1170px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        .apresentacao
+        {
+            width: 366px;
+            height: fit-content;
+            font-size: 20px;
+            // border: 2px solid;
+            display:flex;
+            flex-direction: column;
+            h2,p,button
+            {
+                margin: 15px 0px;
+                cursor: default;
+            }
+            button
+            {
+                background-color: #0F0202;
+                color: white;
+                border: none;
+                padding: 10px 50px;
+                border-radius: 50px;
+                width: fit-content;
+                font-size: 16px;
+                transition: 0.2s;
+                // width: 262px;
+            }
+            button:hover
+            {
+                margin: 10px 10px 10px -10px;
+                padding: 15px 60px;
+            }
+        }
+        .imagem_init
+        {
+            width: 452px;
+            height: 452px;
+            // border: 2px solid;
+            margin: 0px 100px 0px auto;
+            background-image: url("imagens/logo2.png");
+
+        }
+    }
+    
+}
+.sobre_section
+{
+    width: 100%;
+    height: 500px;
+    background-color: gray;
+    // background-image: linear-gradient(0deg, gray,  #321616f1 30%);
+    display: flex;
+    align-items: center;
+    .sobre_section_container
+    {
+        width: 90%;
+        max-width: 1170px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        // background-color: rgb(153, 49, 49);
+        .apresentacao
+        {
+            width: 530px;
+            height: fit-content;
+            font-size: 20px;
+            // border: 2px solid;
+            display:flex;
+            flex-direction: column;
+            h3
+            {
+                position: relative;
+            }
+            h3::before
+            {
+                content: "";
+                width: 50px;
+                height: 0px;
+                border: 2px solid;
+                border-radius: 50px;
+                position: absolute;
+                top: -5px;
+            }
+            h2,p,button
+            {
+                margin: 15px 0px;
+            }
+            button
+            {
+                background-color: #0F0202;
+                color: white;
+                border: none;
+                padding: 10px 30px;
+                border-radius: 50px;
+                width: fit-content;
+                font-size: 16px;
+                width: 262px;
+            }
+        }
+        .imagem_sobre
+        {
+            width: 445px;
+            height: 297px;
+            // border: 2px solid;
+            margin: 0px 100px 0px auto;
+            background-image: url("imagens/barbeiro.jpg");
+            background-size: 100%;
+            
+            .mensagem_escondida
+            {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.118);
+                backdrop-filter: blur(10px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2em;
+                color: gray;
+                opacity: 0;
+                transition: 0.7s;
+            }
+            .mensagem_escondida:hover
+            {
+                opacity: 1;
+            }
+        }
+        
+    }
+    
+}
+.frase_section
+{
+    width: 100%;
+    height: 600px;
+    background-color: gray;
+    background-image: linear-gradient(180deg, gray,  #321616f1, black);
+    display: flex;
+    align-items: center;
+    .frase_section_container
+    {
+        width: 90%;
+        max-width: 1170px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        // background-color: rgb(153, 49, 49);
+        .apresentacao
+        {
+            width: fit-content;
+            height: fit-content;
+            font-size: 20px;
+            // border: 2px solid;
+            margin: auto;
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+            svg
+            {
+                transition: 0.2s;
+            }
+            svg:hover
+            {
+                transform: translateY(-10px);
+                path
+                {
+                    fill: gray;
+                }
+            }
+            h3
+            {
+                transition: 0.2s;
+                cursor: default;
+                margin: 40px;
+                span
+                {
+                    // transform: translateY(-0px);
+                    // position: relative;
+                    transition: 0.3s;
+                    
+                }
+                span:hover
+                {
+                    // font-size: 1.2em;
+                    // top: -10px;
+                    color: gray;
+                    // transform: translateY(-10px);
+                }
+            }
+            span
+            {
+                transition: 0.2s;
+                cursor: default;
+            }
+            span:hover
+            {
+                transform: translateY(-5px);
+            }
+            
+        }
+    }
+    
+}
+.main_footer
+{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    position: relative;
+    // background-image: linear-gradient(180deg, #321616f1 , black );
+    display: flex;
+    align-items: center;
+    .container_header
+    {
+        width: 90%;
+        max-width: 1170px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        // background-color: rgba(168, 121, 121, 0.374);
+        p
+        {
+            cursor: default;
+            font-size: 20px;
+        }
+    }
+    .logo_aqui
+    {
+        width: 300px;
+        height: 300px;
+        // background-color: green;
+        background-image: url("imagens/logo.png");
+        transform: rotateZ(270deg);
+        background-position-x: -90px;
+         background-position-y: -50px;
+        position: absolute;
+        bottom: 0%;
+        left: 70%;
+    }
+}

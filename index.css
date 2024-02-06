@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+.main_header {
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(0deg, rgba(50, 22, 22, 0.9450980392), black, black);
+}
+.main_header .container_header {
+  width: 90%;
+  max-width: 1170px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.main_header .logo_header {
+  cursor: pointer;
+}
+.main_header .logo_header img {
+  transform: rotateZ(270deg);
+  width: 100px;
+}
+.main_header .infos_contato {
+  margin: 0px 0px 0px auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.main_header .infos_contato .local {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.main_header .infos_contato .local svg {
+  margin: 0px 5px 0px 0px;
+}
+.main_header .infos_contato .numero {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.main_header .infos_contato .numero svg {
+  margin: 0px 5px 0px 0px;
+}
+.main_header .infos_contato .options {
+  transition: 0.2s;
+}
+.main_header .infos_contato .options:active {
+  transform: translateY(10px);
+}
+
+.init_section {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(0deg, gray, rgba(50, 22, 22, 0.9450980392) 30%);
+  display: flex;
+  align-items: center;
+}
+.init_section .init_section_container {
+  width: 90%;
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.init_section .init_section_container .apresentacao {
+  width: 366px;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.init_section .init_section_container .apresentacao h2, .init_section .init_section_container .apresentacao p, .init_section .init_section_container .apresentacao button {
+  margin: 15px 0px;
+  cursor: default;
+}
+.init_section .init_section_container .apresentacao button {
+  background-color: #0F0202;
+  color: white;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 50px;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  transition: 0.2s;
+}
+.init_section .init_section_container .apresentacao button:hover {
+  margin: 10px 10px 10px -10px;
+  padding: 15px 60px;
+}
+.init_section .init_section_container .imagem_init {
+  width: 452px;
+  height: 452px;
+  margin: 0px 100px 0px auto;
+  background-image: url("imagens/logo2.png");
+}
+
+.sobre_section {
+  width: 100%;
+  height: 500px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+}
+.sobre_section .sobre_section_container {
+  width: 90%;
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.sobre_section .sobre_section_container .apresentacao {
+  width: 530px;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.sobre_section .sobre_section_container .apresentacao h3 {
+  position: relative;
+}
+.sobre_section .sobre_section_container .apresentacao h3::before {
+  content: "";
+  width: 50px;
+  height: 0px;
+  border: 2px solid;
+  border-radius: 50px;
+  position: absolute;
+  top: -5px;
+}
+.sobre_section .sobre_section_container .apresentacao h2, .sobre_section .sobre_section_container .apresentacao p, .sobre_section .sobre_section_container .apresentacao button {
+  margin: 15px 0px;
+}
+.sobre_section .sobre_section_container .apresentacao button {
+  background-color: #0F0202;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  width: 262px;
+}
+.sobre_section .sobre_section_container .imagem_sobre {
+  width: 445px;
+  height: 297px;
+  margin: 0px 100px 0px auto;
+  background-image: url("imagens/barbeiro.jpg");
+  background-size: 100%;
+}
+.sobre_section .sobre_section_container .imagem_sobre .mensagem_escondida {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.118);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: gray;
+  opacity: 0;
+  transition: 0.7s;
+}
+.sobre_section .sobre_section_container .imagem_sobre .mensagem_escondida:hover {
+  opacity: 1;
+}
+
+.frase_section {
+  width: 100%;
+  height: 600px;
+  background-color: gray;
+  background-image: linear-gradient(180deg, gray, rgba(50, 22, 22, 0.9450980392), black);
+  display: flex;
+  align-items: center;
+}
+.frase_section .frase_section_container {
+  width: 90%;
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.frase_section .frase_section_container .apresentacao {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 20px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.frase_section .frase_section_container .apresentacao svg {
+  transition: 0.2s;
+}
+.frase_section .frase_section_container .apresentacao svg:hover {
+  transform: translateY(-10px);
+}
+.frase_section .frase_section_container .apresentacao svg:hover path {
+  fill: gray;
+}
+.frase_section .frase_section_container .apresentacao h3 {
+  transition: 0.2s;
+  cursor: default;
+  margin: 40px;
+}
+.frase_section .frase_section_container .apresentacao h3 span {
+  transition: 0.3s;
+}
+.frase_section .frase_section_container .apresentacao h3 span:hover {
+  color: gray;
+}
+.frase_section .frase_section_container .apresentacao span {
+  transition: 0.2s;
+  cursor: default;
+}
+.frase_section .frase_section_container .apresentacao span:hover {
+  transform: translateY(-5px);
+}
+
+.main_footer {
+  width: 100%;
+  height: 90px;
+  background-color: black;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.main_footer .container_header {
+  width: 90%;
+  max-width: 1170px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.main_footer .container_header p {
+  cursor: default;
+  font-size: 20px;
+}
+.main_footer .logo_aqui {
+  width: 300px;
+  height: 300px;
+  background-image: url("imagens/logo.png");
+  transform: rotateZ(270deg);
+  background-position-x: -90px;
+  background-position-y: -50px;
+  position: absolute;
+  bottom: 0%;
+  left: 70%;
+}/*# sourceMappingURL=index.css.map */
